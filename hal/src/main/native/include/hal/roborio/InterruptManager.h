@@ -26,7 +26,7 @@ class InterruptManager {
  private:
   InterruptManager() = default;
 
-  wpi::priority_mutex currentMaskMutex;
+  wpi::mutex currentMaskMutex;
   uint32_t currentMask;
   NiFpga_Session fpgaSession;
 };
