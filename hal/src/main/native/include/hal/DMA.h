@@ -34,6 +34,7 @@ struct HAL_DMASample {
   uint32_t captureSize;
   uint8_t triggerChannels;
 };
+typedef struct HAL_DMASample HAL_DMASample;
 
 #ifdef __cplusplus
 extern "C" {

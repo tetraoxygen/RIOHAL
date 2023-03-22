@@ -226,6 +226,7 @@ struct HAL_PowerDistributionVersion {
   uint32_t hardwareMajor;
   uint32_t uniqueId;
 };
+typedef struct HAL_PowerDistributionVersion HAL_PowerDistributionVersion;
 
 struct HAL_PowerDistributionFaults {
   uint32_t channel0BreakerFault : 1;
@@ -256,6 +257,7 @@ struct HAL_PowerDistributionFaults {
   uint32_t canWarning : 1;
   uint32_t hardwareFault : 1;
 };
+typedef struct HAL_PowerDistributionFaults HAL_PowerDistributionFaults;
 
 /**
  * Storage for REV PDH Sticky Faults
@@ -290,6 +292,7 @@ struct HAL_PowerDistributionStickyFaults {
   uint32_t canBusOff : 1;
   uint32_t hasReset : 1;
 };
+typedef struct HAL_PowerDistributionStickyFaults HAL_PowerDistributionStickyFaults;
 
 void HAL_GetPowerDistributionVersion(HAL_PowerDistributionHandle handle,
                                      HAL_PowerDistributionVersion* version,

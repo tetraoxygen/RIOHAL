@@ -35,6 +35,7 @@ struct HAL_REVPHVersion {
   uint32_t hardwareMajor;
   uint32_t uniqueId;
 };
+typedef struct HAL_REVPHVersion HAL_REVPHVersion;
 
 /**
  * Storage for compressor config
@@ -45,6 +46,7 @@ struct HAL_REVPHCompressorConfig {
   HAL_Bool forceDisable;
   HAL_Bool useDigital;
 };
+typedef struct HAL_REVPHCompressorConfig HAL_REVPHCompressorConfig;
 
 /**
  * Storage for REV PH Faults
@@ -73,6 +75,7 @@ struct HAL_REVPHFaults {
   uint32_t canWarning : 1;
   uint32_t hardwareFault : 1;
 };
+typedef struct HAL_REVPHFaults HAL_REVPHFaults;
 
 /**
  * Storage for REV PH Sticky Faults
@@ -86,6 +89,7 @@ struct HAL_REVPHStickyFaults {
   uint32_t canBusOff : 1;
   uint32_t hasReset : 1;
 };
+typedef struct HAL_REVPHStickyFaults HAL_REVPHStickyFaults;
 
 #ifdef __cplusplus
 extern "C" {
